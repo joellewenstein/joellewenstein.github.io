@@ -9,9 +9,6 @@
 .slab {
   font-family: 'Roboto Slab', san-serif;
 }
-.serif {
-  font-family: "Crimson Text", serif;
-}
 body {
   background: #fcf9f2;
   padding-bottom: 190px;
@@ -33,16 +30,19 @@ body {
   margin: 0;
   text-align: center;
   line-height: 1em;
-  font-family: 'Roboto Slab', san-serif;
 }
 #header h1 {
   font-size: 65px;
   font-weight: 700;
   margin-bottom: 15px;
+  font-family: 'Roboto Slab', san-serif;
+
 }
 #header h2 {
-  font-size: 27px;
+  font-size: 25px;
   font-weight: 100;
+  font-family: sans-serif;
+  font-weight: lighter;
 }
 a.offsite {
   color: #011c26;
@@ -77,6 +77,10 @@ a.offsite:hover {
   margin-top: -7px;
   padding: 5px 10px;
 }
+
+.work {
+  height: 200px;
+}
 .section .project .contents,
 .section .work .contents,
 .section .writing .contents {
@@ -100,13 +104,13 @@ a.offsite:hover {
   font-weight: 200;
   margin-top: 4px;
 }
-.section .project .contents .description,
-.section .work .contents .description,
-.section .writing .contents .description {
+.section .description{
   width: 100%;
   float: left;
   color: #555;
-  font-family: 'Crimson Text', serif;
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 1.3em;
 }
 .section .project .contents .url,
 .section .work .contents .url,
@@ -118,7 +122,7 @@ a.offsite:hover {
 .section .project .contents .url a,
 .section .work .contents .url a,
 .section .writing .contents .url a {
-  font-family: "Crimson Text", serif;
+  font-family: sans-serif;
   color: #c7041b;
 }
 .section .project .contents .image,
@@ -185,7 +189,10 @@ a.offsite:hover {
   #header h2 {
     font-size: 45px;
     margin-top: 25px;
-    font-weight: 400;
+    font-weight: 100;
+    width: 70%;
+    margin: 0 auto;
+    line-height: 1.4em;
   }
   .container {
     width: 100%;
@@ -205,18 +212,23 @@ a.offsite:hover {
     text-align: center;
   }
   .section .section-header h2 {
-    background: #c7041b;
+    background: #a90619;
     text-align: center;
     color: white;
     padding: 5px;
     float: none;
     border: none;
     display: inline-block;
-    padding: 10px;
+    padding: 20px;
   }
   .section .contents {
     margin-bottom: 100px;
   }
+
+  .section .contents .description {
+    font-size: inherit;
+  }
+
   .section .photos {
     margin-left: 100px;
   }

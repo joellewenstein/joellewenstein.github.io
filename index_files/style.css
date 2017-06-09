@@ -1,0 +1,227 @@
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+.slab {
+  font-family: 'Roboto Slab', serif;
+}
+.serif {
+  font-family: "Crimson Text", serif;
+}
+body {
+  background: #fcf9f2;
+  padding-bottom: 190px;
+}
+#header {
+  background: url('header_1.png') no-repeat center center #011c26;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#header h1,
+#header h2 {
+  color: white;
+  text-shadow: black 0px 0px 5px;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  line-height: 1em;
+  font-family: 'Roboto Slab', serif;
+}
+#header h1 {
+  font-size: 65px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+#header h2 {
+  font-size: 27px;
+  font-weight: 100;
+}
+a.offsite {
+  color: #011c26;
+  font-family: 'Roboto Slab', serif;
+  border-bottom: 1px solid #fd9aa6;
+}
+a.offsite:hover {
+  color: #011c26;
+  text-decoration: none;
+  border-bottom-color: #fb364d;
+}
+.section {
+  padding: 190px 120px 0;
+  font-size: 18px;
+  line-height: 1.4em;
+  position: relative;
+}
+.section.first {
+  margin-top: 470px;
+}
+.section .section-header {
+  width: 110px;
+  position: absolute;
+  left: -25px;
+}
+.section .section-header h2 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  color: #011c26;
+  float: right;
+  border-top: 5px solid #c7041b;
+  margin-top: -7px;
+  padding: 5px 10px;
+}
+.section .project .contents,
+.section .work .contents,
+.section .writing .contents {
+  float: left;
+}
+.section .project .contents h3,
+.section .work .contents h3,
+.section .writing .contents h3 {
+  float: left;
+  font-weight: bold;
+  margin-bottom: 3px;
+  line-height: 1.75em;
+  font-family: 'Roboto Slab', serif;
+}
+.section .project .contents h4,
+.section .work .contents h4,
+.section .writing .contents h4 {
+  float: left;
+  color: #c7041b;
+  margin-left: 25px;
+  font-weight: 200;
+  margin-top: 4px;
+}
+.section .project .contents .description,
+.section .work .contents .description,
+.section .writing .contents .description {
+  width: 100%;
+  float: left;
+  color: #555;
+  font-family: 'Crimson Text', serif;
+}
+.section .project .contents .url,
+.section .work .contents .url,
+.section .writing .contents .url {
+  float: left;
+  width: 100%;
+  margin-top: 5px;
+}
+.section .project .contents .url a,
+.section .work .contents .url a,
+.section .writing .contents .url a {
+  font-family: "Crimson Text", serif;
+  color: #c7041b;
+}
+.section .project .contents .image,
+.section .work .contents .image,
+.section .writing .contents .image {
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  max-height: 150px;
+  overflow: hidden;
+  box-shadow: 0 0 3px #ccc;
+}
+.section .project .contents .image img,
+.section .work .contents .image img,
+.section .writing .contents .image img {
+  width: 100%;
+}
+.section .writing {
+  min-height: 150px;
+}
+.section .photos .image {
+  float: left;
+  margin: 10px;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+}
+.section .photos .image img {
+  width: 200px;
+}
+.section .photos .image.expand-preview img {
+  width: 345px;
+}
+.section .photos .image.offset-left img {
+  margin-left: -40%;
+}
+.section .photos .image.large {
+  width: 420px;
+  height: 420px;
+}
+.section .photos .image.large.expand-preview img {
+  width: 570px;
+}
+.section .photos .image.large img {
+  width: 420px;
+}
+.section .contact {
+  font-family: 'Roboto Slab', serif;
+  margin-bottom: 30px;
+  margin-top: 3px;
+}
+.section .contact a {
+  font-weight: bold;
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  #header {
+    padding: 200px 0;
+  }
+  #header h1 {
+    font-size: 95px;
+  }
+  #header h2 {
+    font-size: 45px;
+    margin-top: 25px;
+    font-weight: 400;
+  }
+  .container {
+    width: 100%;
+  }
+  .section {
+    padding: 190px 40px 0;
+    font-size: 47px;
+  }
+  .section.first {
+    margin-top: 500px;
+  }
+  .section .section-header {
+    margin-bottom: 50px;
+    position: relative;
+    left: 0;
+    width: auto;
+    text-align: center;
+  }
+  .section .section-header h2 {
+    background: #c7041b;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    float: none;
+    border: none;
+    display: inline-block;
+    padding: 10px;
+  }
+  .section .contents {
+    margin-bottom: 100px;
+  }
+  .section .photos {
+    margin-left: 100px;
+  }
+  .section .photos .image.large {
+    width: 200px;
+    height: 200px;
+  }
+}

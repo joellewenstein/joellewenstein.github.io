@@ -185,6 +185,7 @@ a.offsite:hover {
   }
   #header h1 {
     font-size: 95px;
+    text-shadow: none;
   }
   #header h2 {
     font-size: 45px;
@@ -236,4 +237,14 @@ a.offsite:hover {
     width: 200px;
     height: 200px;
   }
+
+  .col-md-6,
+  .col-md-4 {
+    width: 100%;
+  }
+
+  .work {
+    height: auto;
+  }
+
 }

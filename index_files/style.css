@@ -207,6 +207,7 @@ a.offsite:hover {
   }
   .section .section-header {
     margin-bottom: 50px;
+    margin-top: 20px;
     position: relative;
     left: 0;
     width: auto;

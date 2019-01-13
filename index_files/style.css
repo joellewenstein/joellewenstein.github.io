@@ -1,76 +1,59 @@
 body {
-  background: #191a2b;
-  color: #edf2f4;
-  font-family: poppins, sans-serif;
-}
-
-body::after {
-  content: "";
-  background: url(decapitationtrick.jpg);
-  background-size: cover;
-  opacity: 0.05;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
+  background: #f9f7f7;
+  color: #112d4e;
+  font-family: source-serif-pro, serif;
 }
 
 a {
-  color: #8596b2;
+  border-bottom: 1px solid #3f72af;
+  color: #3f72af;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 a:hover {
-  color: #d25b6f;
+  border-color: #f95959;
+  color: #f95959;
 }
 
 #container {
-  width: 900px;
-  margin: 6rem auto;
-  display: flex;
+  box-sizing: border-box;
+  padding: 10% 5% 10% 10%;
+  width: 100%;
 }
 
 h1 {
-  font-size: 4rem;
-  line-height: 4rem;
-  flex: 1;
-  font-weight: 800;
-  padding-right: 3rem;
+  font-size: 32px;
+  float: left;
+  line-height: 1.2em;
+  font-weight: 600;
+  padding: 5%;
+  margin-left: -10%;
 }
 
 #information {
-  font-size: 1.6rem;
-  line-height: 2.2rem;
+  font-size: 18px;
+  line-height: 1.3em;
   font-weight: 300;
-  flex: 2;
 }
 
 #information p {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
-@media screen and (max-width: 855px) {
+@media only screen and (min-width: 768px) {
   #container {
-    width: 100%;
-    flex-direction: column;
-  }
-
-  h1,
-  #information {
-    padding: 2rem;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 5%;
   }
 
   h1 {
-    font-size: 12vw;
-    line-height: 14vw;
-    padding: 0 2rem;
+    font-size: 60px;
+    margin-left: -20%;
   }
 
   #information {
-    font-size: 5vw;
-    line-height: 6.5vw;
+    font-size: 30px;
   }
 }

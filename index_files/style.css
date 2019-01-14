@@ -33,7 +33,7 @@ h1 {
 
 #information {
   font-size: 22px;
-  line-height: 1.4em;
+  line-height: 1.5em;
   font-weight: 300;
 }
 
@@ -56,6 +56,7 @@ h1 {
 
   #information {
     font-size: 30px;
+    line-height: 1.4em;
   }
 
   #information p {

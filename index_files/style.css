@@ -18,7 +18,7 @@ a:hover {
 
 #container {
   box-sizing: border-box;
-  padding: 10% 5% 10% 10%;
+  padding: 8% 2.5% 8% 8%;
   width: 100%;
 }
 
@@ -27,18 +27,18 @@ h1 {
   float: left;
   line-height: 1.2em;
   font-weight: 600;
-  padding: 5%;
-  margin-left: -10%;
+  padding: 3%;
+  margin-left: -8%;
 }
 
 #information {
-  font-size: 18px;
-  line-height: 1.3em;
+  font-size: 22px;
+  line-height: 1.4em;
   font-weight: 300;
 }
 
 #information p {
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -51,9 +51,14 @@ h1 {
   h1 {
     font-size: 60px;
     margin-left: -20%;
+    padding: 5%;
   }
 
   #information {
     font-size: 30px;
+  }
+
+  #information p {
+    margin-bottom: 45px;
   }
 }

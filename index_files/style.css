@@ -18,23 +18,23 @@ a:hover {
 
 #container {
   box-sizing: border-box;
-  padding: 8% 2.5% 8% 8%;
   width: 100%;
 }
 
 h1 {
+  background: #112d4e;
+  color: #f9f7f7;
   font-size: 32px;
-  float: left;
   line-height: 1.2em;
   font-weight: 600;
-  padding: 3%;
-  margin-left: -8%;
+  padding: 25% 10% 5%;
 }
 
 #information {
   font-size: 22px;
   line-height: 1.5em;
-  font-weight: 300;
+  font-weight: 400;
+  padding: 5% 10% 5%;
 }
 
 #information p {

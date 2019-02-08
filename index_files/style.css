@@ -24,17 +24,17 @@ a:hover {
 h1 {
   background: #112d4e;
   color: #f9f7f7;
-  font-size: 38px;
+  font-size: 42px;
   line-height: 1.2em;
   font-weight: 600;
-  padding: 25% 10% 8%;
+  padding: 30% 10% 10%;
 }
 
 #information {
   font-size: 20px;
   line-height: 1.5em;
   font-weight: 400;
-  padding: 8% 10% 25%;
+  padding: 10% 10% 30%;
 }
 
 #information p {

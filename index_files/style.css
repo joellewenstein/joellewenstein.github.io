@@ -11,23 +11,30 @@ a {
   transition: color 0.2s ease;
 }
 
+p {
+  line-height: 1.5em;
+}
+
 a:hover {
   border-color: #f95959;
   color: #f95959;
 }
 
-#container {
+body {
   box-sizing: border-box;
   width: 100%;
 }
 
-h1 {
+.titleArea {
   background: #112d4e;
   color: #f9f7f7;
+  padding: 30% 10% 10%;
+}
+
+h1 {
   font-size: 42px;
   line-height: 1.2em;
   font-weight: 600;
-  padding: 30% 10% 10%;
 }
 
 #information {
@@ -41,19 +48,80 @@ h1 {
   margin-bottom: 35px;
 }
 
+/* Case Studies */
+.caseStudy .titleArea {
+  padding: 20% 10% 10%;
+}
+
+.caseStudy h1 {
+  font-size: 32px;
+}
+
+.caseStudy .pageOverview {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.3em;
+  margin-top: 20px;
+}
+
+.caseStudy > * {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.caseStudy h2 {
+  margin: 10% auto 3%;
+  font-weight: 600;
+  font-size: 18px;
+  font-variant: small-caps;
+}
+
+.caseStudy h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.caseStudy p {
+  font-size: 18px;
+}
+
+.caseStudy img {
+  width: 90%;
+  padding: 5%;
+  background: #f5f0f0;
+  margin: 5% 0;
+  max-height: 200px;
+}
+
 @media only screen and (min-width: 768px) {
+  body {
+    height: 100%;
+  }
+
   #container {
     display: flex;
     flex-direction: row;
     height: 100%;
   }
 
-  h1,
-  #information {
-    padding: 5%;
+  .titleArea {
+    padding-top: 10%;
+    padding-bottom: 50%;
   }
 
-  h1 {
+  .caseStudy > * {
+    padding: 10%;
+  }
+
+  .caseStudy .titlearea {
+    padding-bottom: 5%;
+    font-size: 54px;
+    flex: 1;
+  }
+
+  .caseStudy .section {
+    padding-bottom: 5%;
     font-size: 54px;
     flex: 1;
   }
@@ -62,6 +130,7 @@ h1 {
     flex: 4;
     font-size: 24px;
     line-height: 1.4em;
+    padding-top: 10%;
   }
 
   #information p {

@@ -71,13 +71,17 @@ p {
 .portfolio h3 {
   font-weight: 900;
   font-family: "Lato";
-  font-size: 22px;
+  font-size: 20px;
   margin-top: 3rem;
   margin-bottom: 0.5rem;
 }
 
 .portfolio .section p {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
+}
+
+.portfolio .projectName {
+  font-style: italic;
 }
 
 @media only screen and (min-width: 768px) {
@@ -109,7 +113,7 @@ p {
   }
 
   .content_col {
-    width: 800px;
+    width: 600px;
     margin: 0 auto;
   }
 
@@ -124,19 +128,12 @@ p {
   }
 
   .portfolio .contents .section {
-    clear: both;
-    padding-top: 1rem;
-  }
-
-  .portfolio .contents .section p {
-    float: left;
-    width: 45%;
+    margin-bottom: 1rem;
   }
 
   .portfolio .contents .section .imageWrapper {
-    float: right;
-    width: 53%;
-    margin-left: 2%;
+    width: 100%;
     margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }

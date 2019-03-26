@@ -1,0 +1,98 @@
+
+<html class="">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link href="https://fonts.googleapis.com/css?family=Lato:700,900|Ovo" rel="stylesheet">
+
+
+		<link type="text/css" rel="stylesheet" href="./index_files/reset.css">
+		<link type="text/css" rel="stylesheet" href="./index_files/style.css">
+
+		<link rel="icon" type="image/png" href="./index_files/favicon.ico">
+		<script src="./index_files/main.js"></script>
+		<title>Joel Lewenstein</title>
+		<meta name="description" content="Product Designer">
+	</head>
+  <body>
+		<div class="container portfolio">
+			<div class="header">
+				<div class="content_col">
+					<h1>Reputation at Quora</h1>
+				</div>
+			</div>
+			<div class="contents">
+				<div class="content_col">
+					<div class='section'>
+						<h3>Context</h3>
+						<p>Quora proved to be an incredible platform for people to "make a name" for themselves: A previously-unknown person would start writing in a subject, gain a lot of attention and a reputation for excellence, then use that reputation for real-world gains (e.g. new jobs, writing opportunities, etc) This pattern emerged organically, and we were excited enough about it to dedicate intentional investment to understanding and improving this use of the platform.</p>
+					</div>
+
+					<div class='section'>
+						<h3>Role</h3>
+						<p>I led a product team dedicated to this goal of Reputation. In that role I defined the key metrics for success, brainstormed and spun up projects to move our metrics, and helped with project management and execution. I was primarily in a management role, though did some IC work as resources & staffing required.</p>
+					</div>
+
+					<div class='section'>
+						<h3>Work</h3>
+						<p>The idea of "Reputation" was initially too amorphous to begin building product against. My first task was to have a series of conversations with stakeholders across the company, and develop better language for which problems we’d be solving and which we wouldn’t. With this focus and stakeholder buy-in, we identified key drivers of reputation-building, and launched a series of projects focused on each one. These drivers were:</p>
+
+						<p><span class="projectName">Displays of Expertise</span> — The first driver of reputation was showing off what you've already earned. Real-world reputation is often displayed using titles bestowed by trusted organizations, e.g. “Professor of Astronomy at Cambridge.” Quora had a way to display a title next to an answer, with a freeform box that an author could write whatever they wanted. The freeform format, however, led to uses of humor and social signaling rather than earnest displays of expertise: For instance, in a subject like music we saw more “Ringo was unappreciated” than “Have been writing a music blog since 2007.” While this had some positive effects (inside jokes created in-group dynamics and community bonding), it limited the more earnest displays of expertise that we wanted to encourage. /p>
+
+						<p>To encourage more dispalys of experise, we leaned on the power of social modeling and good defaults. We knew that if the path of least resistance was displaying an earnest bio full of expertise, it would drive the social conventions towards demonstrations of expertise. The team built and shipped a feature called <a href="https://productupdates.quora.com/Show-your-expertise-with-credentials" target="_blank">Credentials</a>, which replaced the freeform text field with a structured form that guided people to choose their experience from dropdown fields:</p>
+
+						<div class='imageWrapper'><img src="./index_files/credentials.png" /></div>
+
+						<p>To measure our results, the team hand-categorized thousands of biographies from before and after the Credentials change, and found that Credentials significantly reduced the number of “joke” bios.</p>
+
+						<p>My role on this project was to oversee the work of our designer and two engineers, and to ensure it continued to be focused on our high-level goals. Because bio’s are so central to the platform, we ran the risk of solving multiple problems poorly, rather than a single problem well. I checked in regularly with the team to ensure that decisions were focused on the primary goals of reputation, and that scope was continuously cut to launch a targeted solution to those problems.</p>
+
+						<p><span class="projectName">Speaking from Strength</span> - The second key driver of reputation is speaking about a subject you actually know about. We conducted a series of user interviews with people with significant real world reputation, some of whom wrote actively on Quora and others who didn’t. Among many themes, we heard one thing repeatedly: It’s incredibly motivating to get the “perfect” question, the one that you feel put on earth to answer.</p>
+
+						<p>We took this feedback and brainstormed project ideas: A better way to sort and filter the millions of open questions within Quora; The ability to anonymously ask a question and ask it to yourself; Ultimately we decided the best solution was to let people publicly declare what subjects they wanted to write about. This concept of an “Ask Me Anything” exists on other platforms (most notably on Reddit) but the topic graph on Quora gave us an opportunity to make AMAs that stayed limited to specific domains.</p>
+
+						<p>The feature we built was called <a href="https://productupdates.quora.com/Helping-Writers-Get-the-Perfect-Question" target="_blank">Taking Questions</a>, and allowed any user on Quora to specify what they wanted to answer about, generating a public indication (and notifications) with a limited time window to increase scarcity and encourage question liquidity.</p>
+
+						<div class='imageWrapper'><img src="./index_files/takingQuestions.png" /></div>
+
+
+						<p>This feature was immediately popular, resulting in a lot of people Taking Questions and engaging with their followers. Most critically for the Reputation initiative, we saw authors writing in subjects they knew a lot about, but hadn't recently written in (due to not finding good questions).</p>
+
+						<p><span class="projectName">Recognition From The Right Audience</span> - The third driver of building reputation is controlling who you’re speaking to. (An aspiring architect doesn’t much care if their writing on architecture is only seen and upvoted by magicians.) Quora had historically focused on getting quality answers enough visibility to get positive reinforcement, but hadn’t spent explicitly focused on who was giving that feedback. For this project, we explicitly tried to get feedback from people whom the author would value recognition from.</p>
+
+						<p>Distribution on Quora happened via our home feed, which was powered by a machine learning algorithm. I spent time with our ML engineers to change the algorithm and increase the likelihood of answers being seen by people whom the author cared about. This was a challenge for me: I didn’t have a strong understanding of how to affect an ML system, and so made my requests in a way that didn’t easily translate to the language of ML. My first attempts failed, either because they never got implemented, or they didn’t have the desired effect.</p>
+
+						<p>We took a step back from the specific changes we wanted to make, and a group of company leaders tried to answer a more fundamental question: How should Product Designers express preferences about Machine Learning systems, in a way that was constructive and actionable? Together we developed a system where a Product Designer identified “Missed Outcomes” → Things we expected the system should have done, but it didn’t do. Then the engineer could investigate why this outcome happened, and propose solutions (with articulated tradeoffs). Armed with this new communication tool, I made two things: (1) A simple metric for “Successful Outcome”, which was roughly “Was a good answer seen by people in the author’s community?” (2) A list of answers written by people with high reputations but that weren’t seen by others in their community.</p>
+
+						<p>Each “Missed Outcome” led to an investigation of why the algorithm hadn’t surfaced that answer. Changes to the algorithm were made, and A/B tested. We were able to make significant progress on the overall metric of Successful Outcomes (specific metrics are confidential to Quora.)</p>
+					</div>
+
+					<div class='section'>
+						<h3>Conclusion</h3>
+
+						<p>The Reputation initiative was successful both in its direct goals, and in what it taught the company. Most importantly, each of the three drivers of Reputation resulted in significant product changes that were positive both in their direct goals, and in downstream benefits to other projects. More excitingly, however, this experience created new learnings and foundations that the product team could use in future initiatives. Most notably, we now had a playbook for taking a desired user experience, defining clear metrics, and working cross-functionally against those metrics, with a strong and constructive partnership between Product Designers and Machine Learning Engineers.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+		var _gaq = _gaq || [];
+_gaq.push(["_setAccount", "UA-50026947-1"]);
+_gaq.push(["_trackPageview"]);
+
+(function() {
+  var ga = document.createElement("script");
+  ga.type = "text/javascript";
+  ga.async = true;
+  ga.src =
+    ("https:" == document.location.protocol ? "https://ssl" : "http://www") +
+    ".google-analytics.com/ga.js";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+	</body>
+	</html>

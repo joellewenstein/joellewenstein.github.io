@@ -1,0 +1,90 @@
+
+<html class="">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link href="https://fonts.googleapis.com/css?family=Lato:700,900|Ovo" rel="stylesheet">
+
+
+		<link type="text/css" rel="stylesheet" href="./index_files/reset.css">
+		<link type="text/css" rel="stylesheet" href="./index_files/style.css">
+
+		<link rel="icon" type="image/png" href="./index_files/favicon.ico">
+		<script src="./index_files/main.js"></script>
+		<title>Joel Lewenstein</title>
+		<meta name="description" content="Product Designer">
+	</head>
+  <body>
+		<div class="container portfolio">
+			<div class="header">
+				<div class="content_col">
+					<h1>Grassroots Resistance with Amplify</h1>
+				</div>
+			</div>
+			<div class="contents">
+				<div class="content_col">
+					<div class='section'>
+						<h3>Context</h3>
+						<p>After leaving Quora, I looked for ways to use technology to empower the new progressive resistance to President Trump. I met the founders of Amplify, an app used by grassroots groups to coordinate taking actions. Early versions of the product had met with success: thousands of people each month were coordinating calling congress, organize community meetings, and send postcards to voters. I spent 6 months working on ways to improve the product and grow the userbase.</p>
+					</div>
+
+					<div class='section'>
+						<h3>Role</h3>
+						<p>On this project I worked directly with the engineering cofounder on all parts of the product development process: brainstorming feature ideas, building wireframes and high fidelity mockups, then implementing all designs in the React Native app.</p>
+					</div>
+
+					<div class='section'>
+						<h3>Work</h3>
+						<p>We took a hypothesis-driven approach towards adding new features. We first developed a theory for why the current app was working with the people that it was, then built and launched new features that would lead to growth if our hypothesis was right. (Though we would have preferred a more typical A/B testing approach, our userbase was both too small, and too dense of a network, for this to be a viable path.)</p>
+
+						<p>For each hypothesis-driven feature, we looked for the fastest path towards launch, preferring to learn quickly from features even if they were unpolished or didn’t have full functionality. For each of the ideas discussed below, we spent only a few weeks each from ideation, concepting, building and launching.</p>
+
+						<p>Our first hypothesis was that taking political action was often lonely and unrewarding, and that positive social reinforcement would make these actions more satisfying and thus more frequently taken. This seemed especially promising, as users of the app were all members of an offline local grassroots group (e.g. a local Indivisible chapter) so had existing social relationships, which we hoped meant that the feedback shared through the app would be especially compelling. The first version of the app was centered around the actions to be taken, with a secondary screen showing who had taken each action. Our first major project was reorganizing the app to make the feed of activity more prominent, and adding the necessary pieces to make the app feel social: profile photos to lend humanity to each person, and large Like buttons to encourage the positive reinforcement.</p>
+
+						<p>{before and after of Amplify v2}</p>
+
+						<p>While this change increased the quantity and rate of Like’s, it didn’t lead to more actions being taken, nor to user growth.</p>
+
+						<p>Our next hypothesis was that taking action alone wasn’t interesting enough to prompt real social interactions. Rather, it would be the context for a person taking that action: their rationale and state of mind, and how they felt after taking the action. We hypothesized that people wanted a space to earnestly discuss having taken political action with likeminded people, and that existing social networks were either too toxic, or had too broad of an audience, to be this space. To test this hypothesis we allowed users to write about why they took an action, and other users could leave comments discussing their actions.</p>
+
+						<p>{Amplify comments}</p>
+
+						<p>As with the first set of changes, though we saw good usage of this new features, it did not lead to the growth we were looking for.</p>
+
+						<p>Our next hypothesis was that the existing actions available were insufficient. Much of the app centered around calling elected officials, which could feel futile — a call wouldn’t lead to a clear outcome (e.g. a changed piece of legislation), and while Democrats were in the minority, it wasn’t clear what effect all these calls were having. We 	looked for other actions that individuals could take from their phones to make a clear political impact.</p>
+
+						<p>As the midterms neared, we knew that voter registration and turnout would be critical, and that social pressure was an effective tool for increasing the typically-low midterm turnout. We built a feature that took a person’s address book, compared it to national voter records, and encouraged texts to be sent to friends who weren’t yet registered. Our hypothesis was that this action would be seen as more directly impactful, and would power the flywheel of Action → Social Reinforcement → More Action.</p>
+
+						<p>{Screenshot of voter contact feature}</p>
+
+						<p>Unfortunately this feature was not widely used, and soon after building it, we stopped doing active work on Amplify. </p>
+					</div>
+
+					<div class='section'>
+						<h3>Conclusion</h3>
+						<p>I wrote a long essay on my <a href="https://medium.com/datadriveninvestor/where-is-the-killer-app-in-politics-b1655a0474ea" target="_blank">conclusions</a> from working at Amplify. In short, I believe that the best experiences center around an action that people love to do repeatedly and frequently. Politics does not offer many of these actions (those that exist are slow, cyclical, and rarely offer clear results). The few actions that are impactful are socially delicate, and are very difficult to accelerate using technology. Amplify was an incredible opportunity to rapidly test hypotheses on a small and engaged community of activists, and ultimately helped demonstrate to me just how hard it is to build compelling digital experiences in this space.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+		var _gaq = _gaq || [];
+_gaq.push(["_setAccount", "UA-50026947-1"]);
+_gaq.push(["_trackPageview"]);
+
+(function() {
+  var ga = document.createElement("script");
+  ga.type = "text/javascript";
+  ga.async = true;
+  ga.src =
+    ("https:" == document.location.protocol ? "https://ssl" : "http://www") +
+    ".google-analytics.com/ga.js";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+	</body>
+	</html>

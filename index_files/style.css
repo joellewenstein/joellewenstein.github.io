@@ -132,8 +132,9 @@ p {
   }
 
   .portfolio .contents .section .imageWrapper {
-    width: 100%;
+    width: 120%;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    margin-left: -10%;
   }
 }

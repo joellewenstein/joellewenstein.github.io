@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /quoraDesignManagement.html
+Disallow: /quoraReputation.html
+Disallow: /amplify.html

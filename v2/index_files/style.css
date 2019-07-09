@@ -1,0 +1,140 @@
+body {
+  background: #f9f7f7;
+  color: #112d4e;
+  font-size: 20px;
+  line-height: 1.5em;
+
+  font-family: "Ovo", serif;
+}
+
+a {
+  border-bottom: 1px solid #3f72af;
+  color: #3f72af;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  border-color: #f95959;
+  color: #f95959;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+.container {
+  height: 100%;
+}
+
+.header {
+  height: 15rem;
+  background: #112d4e;
+  position: relative;
+
+  background: linear-gradient(
+      0deg,
+      rgba(17, 45, 78, 0.97),
+      rgba(17, 45, 78, 0.97)
+    ),
+    url(backgroundPattern.png) repeat;
+
+  background-size: 522px 378px;
+}
+
+.header h1 {
+  position: absolute;
+  bottom: 2.5rem;
+  padding-right: 1rem;
+}
+
+.content_col {
+  padding: 2.5rem 1rem;
+}
+
+h1 {
+  color: #f9f7f7;
+  font-size: 38px;
+  line-height: 1.2em;
+}
+
+p {
+  margin-bottom: 2rem;
+}
+
+.portfolio .contents img {
+  background: #f5f0f0;
+  padding: 2.5%;
+  width: 95%;
+}
+
+.portfolio h3 {
+  font-weight: 900;
+  font-family: "Lato";
+  font-size: 20px;
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.portfolio .section p {
+  margin-top: 0.5rem;
+}
+
+.portfolio .projectName {
+  font-style: italic;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 20px;
+  }
+
+  .container.home {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .container.home .header {
+    flex: 1;
+    height: 100%;
+  }
+
+  .container.home .header {
+    text-align: right;
+  }
+
+  .container.home .header h1 {
+    position: relative;
+    bottom: 1rem;
+  }
+
+  .container.home .contents {
+    flex: 2;
+  }
+
+  .content_col {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .container.home .content_col {
+    margin-top: 6rem;
+    padding: 2rem 3rem;
+    width: auto;
+  }
+
+  .container.home .contents .content_col {
+    max-width: 550px;
+  }
+
+  .portfolio .contents .section {
+    margin-bottom: 1rem;
+  }
+
+  .portfolio .contents .section .imageWrapper {
+    width: 120%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: -10%;
+  }
+}

@@ -7,6 +7,9 @@ var plugins = [{
     },{
       plugin: require('/Users/joel/Dropbox/joellewenstein.github.io/node_modules/gatsby-plugin-prefetch-google-fonts/gatsby-ssr'),
       options: {"plugins":[],"fonts":[{"family":"Ovo"},{"family":"Lato","variants":["400","700"]}]},
+    },{
+      plugin: require('/Users/joel/Dropbox/joellewenstein.github.io/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
+      options: {"plugins":[],"trackingId":"UA-50026947-1","head":false},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [

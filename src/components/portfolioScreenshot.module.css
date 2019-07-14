@@ -1,0 +1,11 @@
+.caption {
+  margin-bottom: 10px;
+}
+
+.screenshot {
+  margin-bottom: 100px;
+}
+
+.screenshot img {
+  border: 1px solid #f2f2f2;
+}

@@ -8,7 +8,7 @@ import SEO from "../components/seo";
 import indexStyles from "./index.module.css";
 
 const IndexPage = () => (
-  <Layout>
+  <Layout title="Joel Lewenstein">
     <SEO title="Home" />
     <div className={indexStyles.contents}>
       <p>

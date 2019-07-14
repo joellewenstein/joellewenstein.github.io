@@ -11,11 +11,23 @@
     url("./../images/backgroundPattern2.png") repeat;
 
   background-size: 522px 378px;
+  margin-bottom: 50px;
 }
 
-.header h1 {
+.titles {
   color: white;
   position: absolute;
-  bottom: 0;
-  padding-bottom: 5vh;
+  bottom: 50px;
+}
+
+.titles h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.titles h2 {
+  color: #eee;
+  margin: 10px 0 0;
+  padding: 0;
+  font-size: 20px;
 }

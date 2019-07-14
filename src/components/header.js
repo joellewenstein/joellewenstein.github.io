@@ -3,20 +3,25 @@ import PropTypes from "prop-types";
 import React from "react";
 import headerStyles from "./header.module.css";
 
-const Header = ({ siteTitle }) => (
+const Header = ({ title, subtitle }) => (
   <header className={headerStyles.header}>
     <div className="content">
-      <h1>Joel Lewenstein</h1>
+      <div className={headerStyles.titles}>
+        <h1>{title}</h1>
+        {subtitle && <h2>{subtitle}</h2>}
+      </div>
     </div>
   </header>
 );
 
 Header.propTypes = {
-  siteTitle: PropTypes.string
+  title: PropTypes.string,
+  subtitle: PropTypes.string
 };
 
 Header.defaultProps = {
-  siteTitle: ``
+  title: ``,
+  subtitle: ``
 };
 
 export default Header;

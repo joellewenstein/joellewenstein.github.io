@@ -1,8 +1,15 @@
+html {
+    height: 100%;
+}
+
 body {
-    background: #231942;
     color: white;   
     font-family: 'Inconsolata', "sans-serif";
     line-height: 2.2rem;
+    
+    background: rgb(35,25,66);
+    background: linear-gradient(315deg, rgba(35,25,66,1) 0%, rgba(35,25,66,1) 77%, rgba(54,38,103,1) 100%);
+    margin: 0;
 }
 
 #content {
